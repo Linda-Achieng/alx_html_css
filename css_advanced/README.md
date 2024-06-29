@@ -35,5 +35,5 @@ This project is a front-end web development project focusing on creating a visua
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/your-username/alx_html_css.git
+   git clone https://github.com/Linda-Achieng/alx_html_css.git
    cd alx_html_css
