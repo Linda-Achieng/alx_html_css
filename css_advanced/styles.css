@@ -234,3 +234,91 @@ border-radius: 50%;
 .testimonials .testimonials-quote p {
   font-style: italic;
 }
+/*tutorial- section */
+.tutorials {
+  height: 100vh;
+}
+.tutorials h2 {
+  text-align: center;
+  font-size: 32px;
+  padding: 80px 0;
+
+}
+.tutorials h2 span {
+  color:#a855f7;
+  font-weight: bold;
+}
+.tutorials-grp {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.tutorials .tutorials-box {
+  width: 255px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: flex-start;
+  position: relative;
+}
+.tutorials .tutorials-box h3{
+  padding: 0 10px;
+  font-weight: bold;
+  font-size: 16px;
+}
+.tutorials .tutorials-box .playbtn{
+  position: absolute;
+  width: 64px;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.tutorials .tutorials-box p {
+  color: #071629;
+  opacity: 50%;
+  line-break: anywhere;
+  font-style: normal;
+}
+.tutorials .tutorials-box .tutorials-desc {
+  min-width: 90%;
+  padding: 0 10px;
+}
+.tutorials .tutorials-box .tutorials-author {
+  display: flex;
+  padding: 0 10px;
+  gap: 10px;
+  align-items: center;
+}
+.tutorials .tutorials-box .tutorials-author h4 {
+  font-weight: bold;
+  font-size: 14px;
+  color:#a855f7;
+}
+.tutorials .tutorials-box .tutorials-author img {
+  width: 30px;
+  border-radius: 30px;
+}
+.tutorials .tutorials-box img {
+  width: 100%;
+}
+
+.tutorials .tutorials-box .tutorials-ratings {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10px 0 0;
+  color:#a855f7;
+}
+
+.tutorials .tutorials-box .tutorials-ratings p {
+  color:#a855f7;
+}
+.tutorials .tutorials-box .tutorials-ratings .stars {
+  display: flex;
+  padding: 0 10px;
+  color:#a855f7;
+  }
+.tutorials .tutorials-box .tutorials-ratings .stars span {
+color: gray;
+}
