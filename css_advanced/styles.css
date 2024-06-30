@@ -204,3 +204,33 @@ align-items: center;
   max-width: 150px;
   font-style: italic; 
  }
+ /*section 2 quote */
+.testimonials{
+background: #a855f7;
+display: flex;
+height: 392px;
+align-items: center;
+justify-content: center;
+gap: 80px;
+color: white;
+padding: 30px 20px;
+}
+.testimonials div {
+max-width: 50%;
+}
+.testimonials .testimonials-quote{
+display: flex;
+flex-direction: column;
+gap: 10px;
+}
+.testimonials .testimonials-quote h3{
+  font-weight: bold;
+  margin-top: 20px;
+}
+.testimonials img {
+  height: 160px;
+border-radius: 50%;
+}
+.testimonials .testimonials-quote p {
+  font-style: italic;
+}
