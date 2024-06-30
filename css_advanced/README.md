@@ -27,13 +27,12 @@ This project is a front-end web development project focusing on creating a visua
 
 ## Technologies Used
 
-- **HTML:** Used for structuring the content of the webpage.
-- **CSS:** Used for styling the webpage to match the design in Figma.
-- **FontAwesome:** Used for including social media icons and other icons.
+ **HTML:** Used for structuring the content of the webpage.
+ **CSS:** Used for styling the webpage to match the design in Figma.
+ **FontAwesome:** Used for including social media icons and other icons.
 
 ## Getting Started
 
 1. **Clone the repository:**
-   ```bash
    git clone https://github.com/Linda-Achieng/alx_html_css.git
    cd alx_html_css
