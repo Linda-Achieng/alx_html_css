@@ -198,7 +198,142 @@ max-width: var(--max-width);
       font-size: 1rem;
       margin: 0;
     }
-    
+    /* Contact us section */
+.contact-us {
+  background-color: var(--white);
+  color: #333;
+  text-align: center;
+   background-size: 100%;
+   align-items: center;
+  
+}
+.Contact-us h2{
+  padding-top: 40px;
+text-align: center;
+padding-bottom: 30px;
+font-size: 32px;
+}
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  animation: fadeIn 1s ease-in-out;
+}
+.contact-form input,
+.contact-form textarea {
+  width: 300px;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: none;
+  border-bottom: 2px solid #ccc; /* Add a line underneath */
+  font-size: 14px;
+ color: rgb(4, 4, 25);
+ transition: border-bottom-color 0.3s, box-shadow 0.3s;
+}
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: none;
+  border-color: var(--primary-color);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow on focus */
+}
+.contact-form button {
+  padding: 10px 20px;
+  background-color: var(--primary-color);
+  color: var(--white);
+  border: none;
+  border-radius: var(--border-radius);
+  cursor: pointer;
+  border-radius: var(--border-radius);
+  margin-bottom: 80px;
+}
+.contact-form button:hover,
+.contact-form button:active {
+  opacity: 0.9;
+  transform: scale(1.05); /* Scale button on hover */
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  transition: transform 0.3s, opacity 0.3s;
+}
+
+.contact-form input:focus::placeholder,
+.contact-form textarea:focus::placeholder {
+  transform: translateY(-20px);
+  opacity: 0;
+}
+   /* Footer Section */
+.footer {
+  background-color: #071629;
+  color: var(--white);
+  padding: 20px 0;
+  text-align: center;
+}
+
+.footer .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: var(--max-width);
+}
+
+.footer-logo img {
+  height: 40px;
+  margin-top: 30px;
+}
+
+.social-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.social-links li {
+  display: inline-block;
+}
+
+.social-links a {
+  display: inline-block;
+  color: black;
+  font-size: 1.5rem;
+  border: 2px solid var(--white);
+  border-radius: 100%;
+  transition: background-color 0.3s, color 0.3s;
+  background: #ffffff;
+  width: 40px;
+  height: 40px;
+  line-height: 40px; /* Vertically center the icon */
+  text-align: center;
+  margin-top: 30px;
+}
+
+.social-links a:hover,
+.social-links a:active {
+  color: var(--primary-color);
+}
+
+.footer-text {
+  margin-top: 40px;
+  font-size: var(--font-size-small);
+}
+ 
 
     /*Responsive Design*/
 @media only screen and (max-width: 768px) 
@@ -259,5 +394,20 @@ max-width: var(--max-width);
 }
 .our-results p {
   font-size: 0.9rem;
+}
+.contact-form {
+  padding: 0 20px;
+}
+.footer .container {
+  flex-direction: column;
+}
+
+.footer-content {
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-logo {
+  margin-bottom: 20px;
 }
 }

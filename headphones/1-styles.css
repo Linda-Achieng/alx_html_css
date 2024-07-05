@@ -186,7 +186,6 @@ max-width: var(--max-width);
 
 }
 @media only screen and (max-width:480) {
-  
 
   .services {
     flex-direction: column;
