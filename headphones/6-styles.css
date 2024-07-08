@@ -9,7 +9,7 @@
 :root {
   --primary-color: #df2a2a;
   --white: #ffffff;
-  --max-width: 1150px;
+  --max-width: 1000px;
   --font-family: 'Source Sans Pro', sans-serif;
   --font-size-base: 1rem;
   --font-size-large: 1.9rem;
@@ -40,6 +40,16 @@ max-width: var(--max-width);
     width: 100%;
 }
 /*header/ hero section*/
+.hidden {
+  display: none;
+}
+
+.holberton_school-icon-menu{
+  display: none;
+}
+.nav-toggle-checkbox{
+  display: none;
+}
 .navbar{
   display: flex;
   justify-content: space-between;
@@ -347,39 +357,65 @@ font-size: 32px;
     /*Responsive Design*/
 @media only screen and (max-width: 768px) 
 {
-  body{
-    overflow-y: auto;
-  }
-  .hero-content h1 {
-    font-size: var(--font-size-large);
-    margin-top: 200px;
-     
-  }
-  .hero-content p{
-  font-size: var(--font-size-small); ;
-  }
-  .btn{
-    margin: 20px;
-  }
-  .description {
-    font-size: var(--font-size-small);
-  }
-  .nav-links {
+    body {
+      overflow-y: auto;
+      padding: 0 20px;
+    }
+  
+    .navbar {
+      position: relative;
+    }
+  
+    .holberton_school-icon-menu {
+      display: block;
+      cursor: pointer;
+      color: var(--white);
+      font-size: 34px;
+      margin-top: 80px;
+    }
+  
+    .nav-links {
       flex-direction: column;
+      display: none;
+      position: absolute;
+      top: 60px; /* Adjust as needed based on your header height */
+      left: 0;
+      width: 100%;
+      padding: 20px 0;
+      text-align: center;
+    }
+  
+    .nav-toggle-checkbox {
+      display: none;
+    }
+  
+    .nav-toggle-checkbox:checked + .nav-links {
       display: flex;
-  }
-
-  .nav-links li {
-      margin-left: 0;
+    }
+  
+    .nav-links li {
       margin-top: 10px;
+    }
+  
+    .nav-links a {
+      color: var(--white);
+      font-weight: bold;
+      text-decoration: none;
+      padding: 10px;
+      display: block;
+    }
+  
+    .nav-links a:hover,
+    .nav-links a:active {
+      color: var(--primary-color);
+    }
+  
+    .logo {
       display: flex;
-
-  }
-  .logo{
-    display: flex;
-  justify-content: center;
-  align-items: center;
-  }
+      justify-content: center;
+      align-items: center;
+      padding-right: 60px;
+    }
   .services {
     flex-direction: column;
     align-items: center;
